@@ -3,10 +3,10 @@ const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 
 var size = window.innerWidth;
-var dpr = window.devicePixelRatio;
-canvas.width = size * dpr;
-canvas.height = size * dpr;
-context.scale(dpr, dpr);
+// var dpr = window.devicePixelRatio;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+// context.scale(dpr, dpr);
 context.lineWidth = 15;
 var step = size / 7;
 var white = "#F2F5F1";
